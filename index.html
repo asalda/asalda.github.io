@@ -229,92 +229,122 @@
 							<article id="research">
 								<span class="image main"><img src="images/banner-research.jpg" alt="Illustration of a researcher at a desk next to a starry sky and a telescope" /></span>
 								<h2 class="major">Research</h2>
-								<p> I have lead (5) first-author publications in world-class scientific journals, and participated in more than (50) peer-reviewed articles, adding up to more than 250 citations. 
-									I advocate for an ethical and transparent scientific methodology, where discoveries and applications are visible and publicly available. </p>
-									
-									<p>	A list of my recent publications can be found in the 
-										<a href="https://ui.adsabs.harvard.edu/search/q=author%3A%22Saldana-Lopez%2C%20Alberto%22&sort=date%20desc%2C%20bibcode%20desc&p_=0" target="_blank" rel="noopener noreferrer">NASA/ADS</a> database. </p>
-								
 								<style>
-								  .plot-container {
-								    display: flex;
-								    align-items: center; /* vertically centers the text */
-								    gap: 20px;           /* space between image and text */
-									max-width: 800px;    /* optional, keeps it from being too wide */
-								    margin: 0 auto;      /* center the section on the page */
-								  }
-								  .plot-image {
-									width: 70%;
-									height: auto;
-								    max-width: 300px;
-								    border-radius: 0%;
-								  }
-									.plot-image-horizontal {
-									width: 80%;
-									height: auto;
-								    max-height: 300px;
-								    border-radius: 0%;
-								  }
+									.res-entry {
+									display: flex;
+									align-items: center;
+									gap: 2rem;
+									margin-bottom: 1rem;
+									}
+									.res-entry.flip { flex-direction: row-reverse; }
+									.res-entry .res-text { flex: 1 1 60%; }
+									.res-entry .res-fig { flex: 0 0 36%; text-align: center; }
+									.res-entry .res-fig img { max-width: 100%; max-height: 340px; height: auto; }
+									.res-wide-fig { text-align: center; margin: 0 0 1.5rem 0; }
+									.res-wide-fig img { width: 100%; max-height: 300px; object-fit: contain; }
+									.res-ref {
+									font-size: 0.8rem;
+									letter-spacing: 0.05rem;
+									text-transform: uppercase;
+									opacity: 0.7;
+									margin: -0.75rem 0 1rem 0;
+									}
+									@media screen and (max-width: 736px) {
+										.res-entry, .res-entry.flip { flex-direction: column; gap: 1rem; }
+										.res-entry .res-fig { flex-basis: auto; width: 100%; }
+									}
 								</style>
 
-								<p> </p>
-								<h3> <i class="fas fa-star"></i> The LaCOS survey: nearby Lyman-alpha halos with HST imaging</h3>
-								<div class="plot-container">
-								  <img src="images/SL25bplot.png" alt="" class="plot-image">
-								  <div>
-								    <p> The <em>circumgalactic medium</em> (CGM) hosts a large gas reservoir around galaxies, whose kinematics and composition is linked to the 
-										physical properties of the galaxies themselves. In my most recent paper, we explored how the morphology and extension of the CGM, 
-										as traced by Lyman-alpha halos seen in emission, impacts the escape of ionizing radiation in star-formaing galaxies. 
-										<strong> You can learn more about the LaCOS survey by reading my <a href="https://ui.adsabs.harvard.edu/abs/2025arXiv250407074S/abstract" target="_blank" rel="noopener noreferrer">paper</a>!</strong> </p>
-								  </div>
+								<p> My research combines space- and ground-based spectroscopy and imaging of star-forming galaxies, from our cosmic neighborhood 
+									to the first billion years, to understand how stellar feedback and ionizing radiation shape galaxies and their surroundings. 
+									To date, I have authored <strong>69 papers</strong>, including <strong>6 as first author</strong>, which together have gathered 
+									~3,000 citations (h-index of 30). I advocate for an ethical and transparent scientific methodology, where discoveries, data and tools 
+									are visible and publicly available. </p>
+
+								<p> Below are the highlights of my first-author work, from newest to oldest. The complete list can be found on 
+									<a href="https://ui.adsabs.harvard.edu/search/q=author%3A%22Saldana-Lopez%2C%20Alberto%22&sort=date%20desc%2C%20bibcode%20desc&p_=0" target="_blank" rel="noopener noreferrer">NASA/ADS</a> 
+									and in my <a href="files/publications.pdf">publication list</a>. </p>
+
+								<hr />
+								<h3> <i class="fas fa-star"></i> Witnessing the birth of galactic winds</h3>
+								<p class="res-ref">Saldana-Lopez et al. (2026b) &middot; ApJ, 1011, 220</p>
+								<div class="res-entry">
+									<div class="res-text">
+										<p> Galactic winds are usually observed long after they are launched, once stellar winds, radiation pressure and supernovae 
+											have all contributed to them. In this paper, we used the host galaxies of <em>superluminous supernovae</em> (SLSNe) as a cosmic clock: 
+											their very massive progenitors explode only a few million years after a starburst begins, and their bright light reveals the gas 
+											in front of them. With VLT/X-shooter spectroscopy of seven hosts, we found slow, low-ionization outflows that can be powered entirely 
+											by stellar winds and radiation pressure, before ordinary supernovae kick in. This provides one of the first empirical constraints 
+											on the earliest phases of stellar feedback. </p>
+										<ul class="actions"><li><a href="https://doi.org/10.3847/1538-4357/aeac18" target="_blank" rel="noopener noreferrer" class="button small">Read the paper</a></li></ul>
+									</div>
+									<div class="res-fig"><img src="images/SL26b.png" alt="Figure from Saldana-Lopez et al. (2026b) on galactic winds in superluminous supernova hosts" /></div>
 								</div>
 
-								<p> </p>
+								<hr />
+								<h3> <i class="fas fa-star"></i> The LaCOS survey: Lyman-alpha halos and the escape of ionizing light</h3>
+								<p class="res-ref">Saldana-Lopez et al. (2026a) &middot; ApJ, 999, 71</p>
+								<div class="res-entry flip">
+									<div class="res-text">
+										<p> The <em>circumgalactic medium</em> (CGM) is a vast gas reservoir surrounding galaxies, whose kinematics and composition are linked 
+											to the properties of the galaxies themselves. In this paper, we used HST imaging from the Ly&alpha; and Continuum Origins Survey (LaCOS) 
+											to map the Lyman-alpha halos of nearby star-forming galaxies. We then explored how the morphology and extent of these halos, which trace 
+											the CGM in emission, relate to the escape of ionizing radiation. </p>
+										<ul class="actions"><li><a href="https://ui.adsabs.harvard.edu/abs/2025arXiv250407074S/abstract" target="_blank" rel="noopener noreferrer" class="button small">Read the paper</a></li></ul>
+									</div>
+									<div class="res-fig"><img src="images/SL26a.png" alt="Figure from Saldana-Lopez et al. (2026a) showing Lyman-alpha halos from the LaCOS survey" /></div>
+								</div>
+
+								<hr />
 								<h3> <i class="fas fa-star"></i> A JWST view of feedback in high-redshift galaxies</h3>
-								<div class="plot-container">
-								  <div>
-								    <p> Stellar winds and supernovae inject energy and momentum into the <em>interstellar medium</em> (ISM) of galaxies, triggering 
-										or preventing future star-formation events. This <em>stellar feedback</em> manifests in the form of galactic winds and has not been 
-										constrained yet in the more distant Universe. In this paper, we investigate the outflows and dynamical masses of high-z galaxies, 
-										in order to decipher whether or not the winds in these systems are strong enough to remain bounded to the hosts... 
-										<strong> Check out our <a href="https://ui.adsabs.harvard.edu/abs/2025arXiv250117145S/abstract" target="_blank" rel="noopener noreferrer">manuscript</a> if you are interested!</strong> </p>
-								  </div>
-								  <img src="images/SL25aplot.png" alt="" class="plot-image">
-								</div>
-								
-								<p> </p>
-								<h3> <i class="fas fa-star"></i> Absoprtion spectroscopy with the public ESO-VANDELS survey</h3>
-								<div class="plot-container">
-								  <img src="images/SL23plot.png" alt="" class="plot-image">
-								  <div>
-								    <p> VANDELS is one of the last ESO public spectrosopic surveys, targetting hundreds of star-forming galaxies at Cosmic Noon. In this work, we make use of this outstanding dataset to study 
-										the gas geometry and dust content of these sources, by looking at particular spectrosopic features seen in absorption in front of the star clusters (<em>down-the-barrel</em>). 
-										<strong> Our python code FiCUS was first presented in this <a href="https://ui.adsabs.harvard.edu/abs/2023MNRAS.522.6295S/abstract" target="_blank" rel="noopener noreferrer">paper</a> too!</strong> </p>
-								  </div>
+								<p class="res-ref">Saldana-Lopez et al. (2025) &middot; MNRAS, 544, 132</p>
+								<div class="res-entry">
+									<div class="res-text">
+										<p> Stellar winds and supernovae inject energy and momentum into the <em>interstellar medium</em> (ISM) of galaxies, either triggering 
+											or preventing future star formation. This <em>stellar feedback</em> manifests as galactic winds, which remain poorly constrained 
+											in the distant Universe. In this paper, we used high-resolution JWST/NIRSpec spectroscopy to measure the outflows and dynamical masses 
+											of high-redshift galaxies, and tested whether their winds are strong enough to escape their hosts. This work was featured in 
+											<a href="https://astrobites.org/2025/02/07/gas_flows_in_early_galaxies_with_jwst/" target="_blank" rel="noopener noreferrer">AstroBites</a>. </p>
+										<ul class="actions"><li><a href="https://ui.adsabs.harvard.edu/abs/2025arXiv250117145S/abstract" target="_blank" rel="noopener noreferrer" class="button small">Read the paper</a></li></ul>
+									</div>
+									<div class="res-fig"><img src="images/SL25aplot.png" alt="Figure from Saldana-Lopez et al. (2025) on outflows and dynamical masses of high-redshift galaxies" /></div>
 								</div>
 
-								<p> </p>
-								<h3> <i class="fas fa-star"></i> The HST Low-z Lyman Continuum Survey (LzLCS)</h3>
-<!-- 								<div class="plot-container"> -->
-								  <div>
-								    <p> I am active member of the LzLCS, the most comprehensive survey studying the ionizing output of galaxies at low redshift. At the time of publication, the LzLCS tripled the number of Lyman Continuum (LyC) 
-										detections in the nearby Universe. In 2022, I developed the routines to measured the LyC escape fraction (fesc) in these galaxies, and established that neutral gas and dust contribute 
-										equally to the absorption of ionizing radiation in galaxies. The LzLCS has became a reference survey for the Reionization community, with many studies making use 
-										of our published high-level data products...<strong> Visit this <a href="https://ui.adsabs.harvard.edu/abs/2022A%26A...663A..59S/abstract" target="_blank" rel="noopener noreferrer">link</a> to learn more about the LzLCS!</strong>  </p>
-								  </div>
-<!-- 								</div> -->
-								<img src="images/SL22plot.png" alt="" class="plot-image-horizontal">
+								<hr />
+								<h3> <i class="fas fa-star"></i> The VANDELS survey: ionizing properties of galaxies at 3 &le; z &le; 5</h3>
+								<p class="res-ref">Saldana-Lopez et al. (2023) &middot; MNRAS, 522, 6295</p>
+								<div class="res-entry flip">
+									<div class="res-text">
+										<p> VANDELS is one of the last ESO public spectroscopic surveys, targeting hundreds of star-forming galaxies in the early Universe. 
+											In this paper, we used its deep rest-frame ultraviolet spectra to study the gas geometry and dust content of galaxies at 3 &le; z &le; 5, 
+											through absorption features imprinted on the light of their stars (the <em>down-the-barrel</em> technique), and to infer their 
+											ionizing properties. This paper also presented our Python code <a href="#coding">FiCUS</a>. </p>
+										<ul class="actions"><li><a href="https://ui.adsabs.harvard.edu/abs/2023MNRAS.522.6295S/abstract" target="_blank" rel="noopener noreferrer" class="button small">Read the paper</a></li></ul>
+									</div>
+									<div class="res-fig"><img src="images/SL23plot.png" alt="Figure from Saldana-Lopez et al. (2023) based on the VANDELS survey" /></div>
+								</div>
 
-								<p> </p>
-								<h3> <i class="fas fa-star"></i> Extragalactic Background Light</h3>
-<!-- 								<div class="plot-container"> -->
-								  <div>
-								    <p> Processes inside galaxies emit radiation in a wide energy range, from ultraviolet (UV) photons released by the most massive stars, to infrarred (IR) radiation produed after the absoprtion of the same UV radiation by dust... 
-										In my first paper back in 2021, I constrained the spectral intensity of the so-called Extragalactic Background Light (EBL) and its evolution with cosmic time, by using the exquisite photometric ancillary data from the HST CANDELS fields.
-										<strong> Take a look at our <a href="https://ui.adsabs.harvard.edu/abs/2021MNRAS.507.5144S/abstract" target="_blank" rel="noopener noreferrer">paper</a>  for more details!</strong>  </p>
-								  </div>
-<!-- 								</div> -->
-								<img src="images/SL21plot.png" alt="" class="plot-image-horizontal">
+								<hr />
+								<h3> <i class="fas fa-star"></i> The HST Low-Redshift Lyman Continuum Survey (LzLCS)</h3>
+								<p class="res-ref">Saldana-Lopez et al. (2022) &middot; A&amp;A, 663, A59</p>
+								<p> The LzLCS is the most comprehensive survey of the ionizing output of low-redshift galaxies: at the time of publication, it tripled 
+									the number of Lyman continuum (LyC) detections in the nearby Universe. In this paper, we developed the routines to measure the LyC escape 
+									fraction (f<sub>esc</sub>) of these galaxies, and established that neutral gas and dust contribute equally to the absorption of their 
+									ionizing radiation. The LzLCS has since become a reference survey for the Reionization community, with many studies making use of our 
+									public high-level data products. </p>
+								<div class="res-wide-fig"><img src="images/SL22plot.png" alt="Figure from Saldana-Lopez et al. (2022) based on the LzLCS" /></div>
+								<ul class="actions"><li><a href="https://ui.adsabs.harvard.edu/abs/2022A%26A...663A..59S/abstract" target="_blank" rel="noopener noreferrer" class="button small">Read the paper</a></li></ul>
+
+								<hr />
+								<h3> <i class="fas fa-star"></i> The Extragalactic Background Light</h3>
+								<p class="res-ref">Saldana-Lopez et al. (2021) &middot; MNRAS, 507, 5144</p>
+								<p> Galaxies emit light over a wide energy range, from ultraviolet (UV) photons produced by the most massive stars to infrared (IR) 
+									radiation re-emitted by the dust that absorbs them. Accumulated over cosmic history, this light builds up the 
+									<em>Extragalactic Background Light</em> (EBL). In my first paper, we used the exquisite multiwavelength photometry of the HST/CANDELS fields 
+									to determine the spectral intensity of the EBL and its evolution with cosmic time, with implications for gamma-ray astronomy in the 
+									era of Fermi and CTA. </p>
+								<div class="res-wide-fig"><img src="images/SL21plot.png" alt="Figure from Saldana-Lopez et al. (2021) on the Extragalactic Background Light" /></div>
+								<ul class="actions"><li><a href="https://ui.adsabs.harvard.edu/abs/2021MNRAS.507.5144S/abstract" target="_blank" rel="noopener noreferrer" class="button small">Read the paper</a></li></ul>
 							</article>
 						
 						<!-- Data access -->
