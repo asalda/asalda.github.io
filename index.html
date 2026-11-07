@@ -278,7 +278,7 @@
 											on the earliest phases of stellar feedback. </p>
 										<ul class="actions"><li><a href="https://doi.org/10.3847/1538-4357/aeac18" target="_blank" rel="noopener noreferrer" class="button small">Read the paper</a></li></ul>
 									</div>
-									<div class="res-fig"><img src="images/SL26bplot.png" alt="Figure from Saldana-Lopez et al. (2026b) on galactic winds in superluminous supernova hosts" /></div>
+									<div class="res-fig"><img src="images/SL26b.png" alt="Figure from Saldana-Lopez et al. (2026b) on galactic winds in superluminous supernova hosts" /></div>
 								</div>
 
 								<hr />
@@ -292,7 +292,7 @@
 											the CGM in emission, relate to the escape of ionizing radiation. </p>
 										<ul class="actions"><li><a href="https://ui.adsabs.harvard.edu/abs/2025arXiv250407074S/abstract" target="_blank" rel="noopener noreferrer" class="button small">Read the paper</a></li></ul>
 									</div>
-									<div class="res-fig"><img src="images/SL26aplot.png" alt="Figure from Saldana-Lopez et al. (2026a) showing Lyman-alpha halos from the LaCOS survey" /></div>
+									<div class="res-fig"><img src="images/SL26a.png" alt="Figure from Saldana-Lopez et al. (2026a) showing Lyman-alpha halos from the LaCOS survey" /></div>
 								</div>
 
 								<hr />
@@ -358,15 +358,124 @@
 							<article id="coding">
 								<span class="image main"><img src="images/banner-coding.jpg?v=2" alt="Illustration of a code-review screen and a person sitting next to a laptop" /></span>
 								<h2 class="major">Coding</h2>
-								<p> I support open-source and collaborative programming projects. Among my software contributions, I have developed <em>FiCUS</em>, a python package for inferring the physical 
-									properties of galaxies with available UV spectroscopic data. The code has been well-received by the community, with more than 10 papers making use of it to date. </p>
-									
-								<p> </p>
-								<h3> <i class="fas fa-star"></i> FiCUS </h3>
-								<p> <strong>FiCUS</strong> is a customized Python script for <strong>FItting the stellar Continuum of extragalactic Ultraviolet (Uv) Spectra</strong>. 
-									The code was presented in <a href="https://ui.adsabs.harvard.edu/abs/2023MNRAS.522.6295S/abstract" target="_blank" rel="noopener noreferrer">Saldana-Lopez et al. (2023)</a>, but the methodology was first 
-									described and tested in <a href="https://ui.adsabs.harvard.edu/abs/2019ApJ...882..182C/abstract" target="_blank" rel="noopener noreferrer">Chisholm et al. (2019)</a>. A public, fully documented version of FiCUS can be found in my GitHub repository: 
-									<a href="https://github.com/asalda/FiCUS" target="_blank" rel="noopener noreferrer">https://github.com/asalda/FiCUS</a>, as well as in the Astrophysics Source Code Library (ASCL): <a href="https://ascl.net/2508.019" target="_blank" rel="noopener noreferrer">https://ascl.net/2508.019</a>.</p>
+								<style>
+									.ficus-card {
+									border: solid 1px rgba(255, 255, 255, 0.35);
+									border-radius: 8px;
+									padding: 2rem 2rem 1rem 2rem;
+									margin: 0 0 2.5rem 0;
+									background: rgba(255, 255, 255, 0.04);
+									}
+									.ficus-head { display: flex; align-items: center; gap: 1.25rem; margin-bottom: 1.25rem; }
+									.ficus-logo {
+									flex: 0 0 auto;
+									width: 3.75rem; height: 3.75rem;
+									border: solid 1px #ffffff; border-radius: 100%;
+									display: flex; align-items: center; justify-content: center;
+									font-size: 1.6rem;
+									}
+									.ficus-head h3 { margin: 0; font-size: 1.5rem; text-transform: none; }
+									.ficus-tagline { margin: 0.25rem 0 0 0; font-size: 0.85rem; opacity: 0.75; }
+									.ficus-tags { list-style: none; padding: 0; margin: 0 0 1.5rem 0; display: flex; flex-wrap: wrap; gap: 0.5rem; }
+									.ficus-tags li {
+									padding: 0.15rem 0.75rem;
+									border: solid 1px rgba(255, 255, 255, 0.35);
+									border-radius: 2rem;
+									font-size: 0.8rem;
+									}
+									.ficus-stats { display: flex; flex-wrap: wrap; gap: 1rem; margin: 0 0 1.75rem 0; }
+									.ficus-stat {
+									flex: 1 1 10rem;
+									text-align: center;
+									padding: 0.9rem 0.5rem;
+									border-top: solid 1px rgba(255, 255, 255, 0.35);
+									border-bottom: solid 1px rgba(255, 255, 255, 0.35);
+									}
+									.ficus-stat strong { display: block; font-size: 1.3rem; letter-spacing: 0.1rem; }
+									.ficus-stat span { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1rem; opacity: 0.75; }
+									.ficus-card pre { margin: 0 0 1.5rem 0; }
+									.ficus-refs { font-size: 0.85rem; opacity: 0.85; }
+									.sw-list li { padding-top: 0.75rem; padding-bottom: 0.75rem; }
+									.sw-meta {
+									display: block;
+									font-size: 0.8rem;
+									letter-spacing: 0.05rem;
+									text-transform: uppercase;
+									opacity: 0.7;
+									margin-bottom: 0.2rem;
+									}
+									@media screen and (max-width: 736px) {
+										.ficus-card { padding: 1.5rem 1.25rem 0.5rem 1.25rem; }
+										.ficus-card ul.actions li { width: 100%; }
+										.ficus-card ul.actions li .button { width: 100%; padding: 0 0.5rem; letter-spacing: 0.1rem; }
+										.ficus-card pre code { white-space: pre-wrap; word-break: break-all; }
+										.ficus-stat { padding: 0.5rem; }
+									}
+								</style>
+
+								<p> I support open-source and collaborative programming. I believe that the tools behind scientific results should be as 
+									accessible as the results themselves, so I make my codes public, documented and easy to install. My main contribution is 
+									<strong>FiCUS</strong>, a Python package to infer the stellar populations of galaxies from their ultraviolet spectra, 
+									now used by the community in 10 independent papers. </p>
+
+								<!-- FiCUS feature card -->
+								<div class="ficus-card">
+									<div class="ficus-head">
+										<div class="ficus-logo"><i class="fas fa-leaf"></i></div>
+										<div>
+											<h3>FiCUS</h3>
+											<p class="ficus-tagline"><strong>Fi</strong>tting the stellar <strong>C</strong>ontinuum of <strong>U</strong>v <strong>S</strong>pectra</p>
+										</div>
+									</div>
+
+									<p> FiCUS fits the stellar continuum of far-ultraviolet galaxy spectra with stellar population synthesis models and dust attenuation, 
+										delivering the key properties of the young stars that power each galaxy: </p>
+									<ul class="ficus-tags">
+										<li>Stellar ages</li>
+										<li>Metallicities</li>
+										<li>UV dust attenuation</li>
+										<li>Ionizing photon production</li>
+									</ul>
+									<p> It was designed for the HST/COS spectra of the Low-Redshift Lyman Continuum Survey 
+										(<a href="https://ui.adsabs.harvard.edu/abs/2022A%26A...663A..59S/abstract" target="_blank" rel="noopener noreferrer">Saldana-Lopez et al. 2022</a>) 
+										and applied to deep rest-frame UV spectra at 3 &le; z &le; 5 
+										(<a href="https://ui.adsabs.harvard.edu/abs/2023MNRAS.522.6295S/abstract" target="_blank" rel="noopener noreferrer">Saldana-Lopez et al. 2023</a>). 
+										The code is publicly available and fully documented on GitHub. </p>
+
+									<div class="ficus-stats">
+										<div class="ficus-stat"><strong>10+</strong><span>independent papers</span></div>
+										<div class="ficus-stat"><strong>2026</strong><span>STScI Spring Symposium tutorial</span></div>
+										<div class="ficus-stat"><strong>ASCL</strong><span>2508.019</span></div>
+									</div>
+
+									<p style="margin-bottom: 0.5rem;"><strong>Get started:</strong></p>
+									<pre><code>git clone https://github.com/asalda/FiCUS.git</code></pre>
+
+									<ul class="actions">
+										<li><a href="https://github.com/asalda/FiCUS" target="_blank" rel="noopener noreferrer" class="button primary icon brands fa-github">View on GitHub</a></li>
+										<li><a href="https://ascl.net/2508.019" target="_blank" rel="noopener noreferrer" class="button icon solid fa-book">ASCL entry</a></li>
+										<li><a href="https://ui.adsabs.harvard.edu/abs/2023MNRAS.522.6295S/abstract" target="_blank" rel="noopener noreferrer" class="button icon solid fa-file-alt">Code paper</a></li>
+									</ul>
+
+									<p class="ficus-refs"> <strong>References:</strong> the code was presented in 
+										<a href="https://ui.adsabs.harvard.edu/abs/2023MNRAS.522.6295S/abstract" target="_blank" rel="noopener noreferrer">Saldana-Lopez et al. (2023)</a>, 
+										building on the methodology first described and tested in 
+										<a href="https://ui.adsabs.harvard.edu/abs/2019ApJ...882..182C/abstract" target="_blank" rel="noopener noreferrer">Chisholm et al. (2019)</a>. </p>
+								</div>
+
+								<h4> <i class="fas fa-star"></i> Other software &amp; data products</h4>
+								<ul class="alt sw-list">
+									<li> <span class="sw-meta">Lead developer &middot; HIGHLIGHTS collaboration</span>
+										<strong>Keck/KCWI emission-line pipeline</strong>: fits the emission lines of the Keck/KCWI and KCRM data cubes of the 
+										HIGHLIGHTS galaxies, used to map ionized outflows around nearby starbursts.</li>
+									<li> <span class="sw-meta">Contributor &middot; LaCOS collaboration</span>
+										<strong>High-Level Science Products for MAST</strong>: processing of HST ACS/SBC, ACS/WFC and WFC3/UVIS imaging into 
+										science-ready Ly&alpha; and continuum maps, and preparation of the corresponding products for the Mikulski Archive for 
+										Space Telescopes (MAST) 
+										(<a href="https://archive.stsci.edu/hlsp/lacos" target="_blank" rel="noopener noreferrer">link</a>).</li>
+								</ul>
+
+								<p> You can find more of my code on <a href="https://github.com/asalda" target="_blank" rel="noopener noreferrer">my GitHub profile</a>. </p>
 							</article>
 						
 						<!-- Contact -->
