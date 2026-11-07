@@ -54,22 +54,15 @@
     								display: block;
     								width: 100%;
   									}
-  									.profile-caption {
-    								text-align: center;
-    								font-size: 0.8rem;
-    								font-style: italic;
-    								opacity: 0.75;
-    								margin: 0.75rem 0 1.5rem 0;
-  									}
   									.aboutme-links {
     								text-align: center;
+    								margin-top: 1.5rem;
     								margin-bottom: 1rem;
   									}
 								</style>
 								<div class="profile-pic-container">
-  									<img src="images/me.jpg" alt="Alberto Saldana-Lopez smiling on a library ladder in the Detective Fiction section of a bookshop" class="profile-pic">
+  									<img src="images/me.jpg?v=2" alt="Alberto Saldana-Lopez" class="profile-pic">
 								</div>
-								<p class="profile-caption">Looking for clues (ionizing photons, mostly...)</p>
 
 								<!-- Quick links -->
 								<ul class="icons aboutme-links">
@@ -102,7 +95,7 @@
 
 								<h3> At a glance </h3>
 								<ul>
-									<li> <strong>69 papers</strong>, ~3,000 citations and an h-index of 30 (<a href="https://ui.adsabs.harvard.edu/search/q=author%3A%22Saldana-Lopez%2C%20Alberto%22&sort=date%20desc%2C%20bibcode%20desc&p_=0" target="_blank" rel="noopener noreferrer">NASA/ADS</a>, October 2026) </li>
+									<li> <strong>69 papers</strong>, ~3,000 citations and an h-index of 30, including <strong>6 first-author papers</strong> with 390+ citations on their own (<a href="https://ui.adsabs.harvard.edu/search/q=author%3A%22Saldana-Lopez%2C%20Alberto%22&sort=date%20desc%2C%20bibcode%20desc&p_=0" target="_blank" rel="noopener noreferrer">NASA/ADS</a>, October 2026) </li>
 									<li> <strong>Principal Investigator of 4 observing programs</strong> with HST, JWST and the VLT, and Co-Investigator on 26 more </li>
 									<li> Leading roles in the <strong>LaCOS</strong>, <strong>HIGHLIGHTS</strong> and <strong>LzLCS</strong> HST collaborations </li>
 									<li> Developer of <a href="#coding"><em>FiCUS</em></a>, a public Python code for UV spectral fitting used in 10+ independent studies </li>
@@ -121,7 +114,7 @@
 								</ul>
 
 								<h3> Beyond research </h3>
-								<p> In my free time, I like reading (lately, very much into Japanese mystery authors, as the photo above might suggest), 
+								<p> In my free time, I like reading (lately, very much into Japanese mystery authors), 
 									running, cooking (desserts, mostly...) and wood carving. If I happen to remember bringing the appropriate device, 
 									I document my travels through the lens of a camera! </p>
 
@@ -132,60 +125,91 @@
 						
 						<!-- Teaching -->
 							<article id="teaching">
-								<span class="image main"><img src="images/pic01.jpg" alt="" /></span>
-								<h2 class="major">Teaching</h2>
-								<p> Teaching is an essential part of my academic endeavour. For my PhD and postdoc, I had the chance to supervise both undergraduate and PhD students, 
-									as well as to be part of graduate thesis committees. Recently, I have guest some lectures for the Astrophysics Master's program at Stockholm University. 
-									During my undergrad, I worked as a Physics, Chemistry and Math tutor.</p>
-									
-								<p> </p>
-								<h4> <i class="fas fa-star"></i> Supervision</h4>
-								<ul>
-									<li> <strong>Ms. Alice R. Young</strong> (Stockholm University), PhD thesis (ongoing): <em>Observational constraints on SMBHs seeding mechanisms</em></li>
-  									<li> <strong>Mr. Pontus Strand</strong> (Stockholm University), MSc thesis (2025): <em>An unbiased sample of strong UV emitters at Cosmic Noon</em> (<a href="https://su.diva-portal.org/smash/record.jsf?pid=diva2%3A1980857&dswid=-9699" target="_blank" rel="noopener noreferrer">link</a>)</li>
+								<style>
+									.teach-list li { padding-top: 0.75rem; padding-bottom: 0.75rem; }
+									.teach-meta {
+									display: block;
+									font-size: 0.8rem;
+									letter-spacing: 0.05rem;
+									text-transform: uppercase;
+									opacity: 0.7;
+									margin-bottom: 0.2rem;
+									}
+									.teach-note { display: block; font-size: 0.9rem; opacity: 0.85; margin-top: 0.2rem; }
+									@media screen and (max-width: 736px) { #teaching h2.major { font-size: 0.9rem; letter-spacing: 0.12rem; white-space: normal; } }
+								</style>
+								<span class="image main"><img src="images/teaching.jpg" alt="Chalkboard illustration with a spiral galaxy, a spectrum with a Lyman-alpha emission line, and a telescope" /></span>
+								<h2 class="major">Teaching &amp; Mentoring</h2>
+								<p> Teaching and mentoring are an essential part of my academic life. At Stockholm University, I have co-advised a PhD student, 
+									supervised two bachelor's theses, served on a PhD thesis committee and given guest lectures in the Master's programme in Astrophysics. 
+									I also enjoy teaching the tools I build, such as my <a href="#coding">FiCUS</a> code. Earlier on, I was a teaching assistant at the 
+									University of Geneva and, during my undergrad, a Physics, Chemistry and Math tutor. </p>
+
+								<h4> <i class="fas fa-star"></i> Student supervision</h4>
+								<ul class="alt teach-list">
+									<li> <span class="teach-meta">PhD thesis co-advisor &middot; Stockholm University &middot; 2023 &ndash; present</span>
+										<strong>Alice R. Young</strong>: <em>Observational constraints on supermassive black hole seeding mechanisms</em>
+										<span class="teach-note">First-author paper: Young et al. (2026), <em>Glimmers in the Cosmic Dawn III</em>, ApJ, 999, 175. 
+										Her work was featured in press releases by Stockholm University (Sep 2024) and Advanced Science News (Oct 2024).</span></li>
+									<li> <span class="teach-meta">BSc thesis advisor &middot; Stockholm University &middot; 2025 &ndash; 2026</span>
+										<strong>Serien Ali</strong>: <em>Are variable supermassive black holes the engines of Little Red Dots?</em></li>
+									<li> <span class="teach-meta">BSc thesis advisor &middot; Stockholm University &middot; 2024 &ndash; 2025</span>
+										<strong>Pontus Strand</strong>: <em>An unbiased sample of strong UV emitters at Cosmic Noon</em> 
+										(<a href="https://su.diva-portal.org/smash/record.jsf?pid=diva2%3A1980857&dswid=-9699" target="_blank" rel="noopener noreferrer">link</a>)</li>
 								</ul>
 
-								<p> </p>
 								<h4> <i class="fas fa-star"></i> Thesis committees</h4>
-								<ul>
-									<li> <strong>Mr. Olof Nebrin</strong> (Stockholm University), PhD thesis (2025): <em>Lyman-alpha feedback prevails at Cosmic Dawn</em></li>
-								</ul>
-								
-								<p> </p>
-								<h4> <i class="fas fa-star"></i> Guest lectures</h4>
-								<ul>
-									<li> <strong>Observational Atsrophysics I</strong> (AS7003): <em>photometry vs spectroscopy</em> - Master in Astrophysics (2025/26), Astronomy Department, Stockholm University (SU)</li>
-  									<li> <strong>The Physics of the Interstellar Medium</strong> (AS7001): <em>dust extinction in galaxies</em> - Master in Astrophysics (2023/24), Astronomy Department, Stockholm University (SU)</li>
-								</ul>
-								
-								<p> </p>
-								<h4> <i class="fas fa-star"></i> Teaching Assistance</h4>
-								<ul>
-  									<li><strong>Astrophysics Lab</strong> (13P950) - Bachelor in Physics (2019/20/21), Faculty of Sciences, University of Geneva (UniGE)</li>
+								<ul class="alt teach-list">
+									<li> <span class="teach-meta">PhD thesis committee member &middot; Stockholm University &middot; 2024 &ndash; 2025</span>
+										<strong>Olof Nebrin</strong>: <em>Ly&alpha; feedback prevails at Cosmic Dawn</em></li>
 								</ul>
 
-								<p> </p>
-								<h4> <i class="fas fa-star"></i> Tutoring</h4>
-								<ul>
-  									<li><em>Physics, Chemistry and Math</em> - highschool level (2014 to 2018)</li>
+								<h4> <i class="fas fa-star"></i> Lectures &amp; tutorials</h4>
+								<ul class="alt teach-list">
+									<li> <span class="teach-meta">Instructor &middot; STScI Spring Symposium, Baltimore &middot; 2026</span>
+										<strong>FiCUS code tutorial</strong>, &ldquo;Modeling Tools&rdquo; session of <em>The Metal-Poor Frontier</em></li>
+									<li> <span class="teach-meta">Guest lecturer &middot; MSc in Astrophysics, Stockholm University &middot; 2024 &ndash; 2025</span>
+										<strong>Observational Astrophysics I</strong> (AS7003): guided discussions on high-redshift galaxies with JWST</li>
+									<li> <span class="teach-meta">Guest lecturer &middot; MSc in Astrophysics, Stockholm University &middot; 2023 &ndash; 2024</span>
+										<strong>Physics of the Interstellar Medium</strong> (AS7001): practical exercise on dust attenuation in galaxies</li>
+									<li> <span class="teach-meta">Organizer &middot; Department of Astronomy, Stockholm University &middot; 2025 &ndash; 2026</span>
+										<strong>OKC Galaxy Formation and Evolution Journal Club</strong></li>
 								</ul>
-								
-								<p> </p>
+
+								<h4> <i class="fas fa-star"></i> Teaching assistance &amp; tutoring</h4>
+								<ul class="alt teach-list">
+									<li> <span class="teach-meta">Teaching assistant &middot; BSc in Physics, University of Geneva &middot; 2019 &ndash; 2021</span>
+										<strong>Astrophysics Lab</strong> (13P950): designed Python workflows to work with HST and SDSS galaxy catalogs</li>
+									<li> <span class="teach-meta">Private tutor &middot; High-school level &middot; 2014 &ndash; 2018</span>
+										<strong>Physics, Chemistry and Math</strong></li>
+								</ul>
+
 								<h2 class="major">Outreach</h2>
-								<p> I defend that Science must be accessible for the general public, 
-									for which outreach is a fundamental piece of my teaching philosophy. </p>
-								
-								<p> </p>
-								<h4> <i class="fas fa-star"></i> Outreach articles</h4>
-								<ul>
-									<li><em>Fueling or Starving? The Role of Gas Flows in Early Galaxy Evolution</em>, <strong>AstroBites</strong> (L. Rowland, <a href="https://astrobites.org/2025/02/07/gas_flows_in_early_galaxies_with_jwst/" target="_blank" rel="noopener noreferrer">link</a>) 
-										- adapted from ''Feedback and dynamical masses in high-z galaxies'' (Saldana-Lopez et al. 2025a, submitted to MNRAS).</li>
-  									<li><em>Two-photon polymerization</em>, Spanish Journal of Physics, Vol.34, No.2 (<a href="https://revistadefisica.es/index.php/ref/article/view/2601/2131" target="_blank" rel="noopener noreferrer">link</a>) 
-										- winner of the <strong>2021 Ramon Corbalan Prize</strong> <em>''...for the popularization and education in non-linear and Quantum Optics''.</em></li>
-									<li><em>Encuentro galactico en Canarias</em> (J. Davila, <a href="https://www.eldia.es/sociedad/2022/09/12/reencuentro-galactico-canarias-75308746.html" target="_blank" rel="noopener noreferrer">link</a>)
-										- from El Dia (La opinion de Tenerife), newspaper interview.</li>
-									<li><em>El blog de Laniakea</em> (D. Sanchez, <a href="https://elblogdelaniakea.wordpress.com/" target="_blank" rel="noopener noreferrer">link</a>) 
-										- contributed with four articles.</li>
+								<p> I believe science should be accessible to everyone, which makes outreach a fundamental piece of my teaching philosophy. 
+									Over the years, I have written popular-science articles, given talks in schools and spoken to the press. </p>
+
+								<h4> <i class="fas fa-star"></i> Articles &amp; media</h4>
+								<ul class="alt teach-list">
+									<li> <span class="teach-meta">AstroBites &middot; February 2025</span>
+										<em>Fueling or Starving? The Role of Gas Flows in Early Galaxy Evolution</em>, by L. Rowland 
+										(<a href="https://astrobites.org/2025/02/07/gas_flows_in_early_galaxies_with_jwst/" target="_blank" rel="noopener noreferrer">link</a>)
+										<span class="teach-note">Feature based on my paper <a href="https://ui.adsabs.harvard.edu/abs/2025arXiv250117145S/abstract" target="_blank" rel="noopener noreferrer">Saldana-Lopez et al. (2025)</a>, MNRAS, 544, 132.</span></li>
+									<li> <span class="teach-meta">El D&iacute;a (La Opini&oacute;n de Tenerife) &middot; September 2022</span>
+										<em>Reencuentro gal&aacute;ctico en Canarias</em>, newspaper interview by J. D&aacute;vila 
+										(<a href="https://www.eldia.es/sociedad/2022/09/12/reencuentro-galactico-canarias-75308746.html" target="_blank" rel="noopener noreferrer">link</a>)</li>
+									<li> <span class="teach-meta">Spanish Journal of Physics &middot; September 2020</span>
+										<em>Two-photon polymerization</em>, Vol. 34, No. 2 
+										(<a href="https://revistadefisica.es/index.php/ref/article/view/2601/2131" target="_blank" rel="noopener noreferrer">link</a>)
+										<span class="teach-note">Winner of the <strong>2021 Ram&oacute;n Corbal&aacute;n Prize</strong> for the popularization and education in Nonlinear and Quantum Optics.</span></li>
+								</ul>
+
+								<h4> <i class="fas fa-star"></i> Talks &amp; blogging</h4>
+								<ul class="alt teach-list">
+									<li> <span class="teach-meta">High schools &middot; December 2019</span>
+										<strong>Extraterrestrial Life</strong>: public outreach talks for high-school students</li>
+									<li> <span class="teach-meta">Contributor &middot; 2018 &ndash; 2020</span>
+										<strong>El Blog de Laniakea</strong>, a popular-science blog in Spanish: four articles 
+										(<a href="https://elblogdelaniakea.wordpress.com/" target="_blank" rel="noopener noreferrer">link</a>)</li>
 								</ul>
 								
 							</article>
