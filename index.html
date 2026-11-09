@@ -15,6 +15,20 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<!-- Accent color (purple from the section banners) -->
+		<style>
+			:root { --accent: #a9a4ff; --accent-soft: rgba(169, 164, 255, 0.5); }
+			#main article a:not(.button):not(.icon) { color: var(--accent); border-bottom-color: var(--accent-soft); }
+			#main article a:not(.button):not(.icon):hover { color: #ffffff; border-bottom-color: #ffffff; }
+			#main article h3 .fa-star, #main article h4 .fa-star { color: var(--accent); }
+			#main article .res-ref, #main article .teach-meta, #main article .sw-meta { color: var(--accent); opacity: 0.9; }
+			#main article .ficus-tags li { border-color: var(--accent); color: var(--accent); }
+			#main article .ficus-logo { border-color: var(--accent); color: var(--accent); }
+			#main article .ficus-stat strong { color: var(--accent); }
+			#main article .button.primary { background-color: var(--accent); color: #1b1f22 !important; box-shadow: none; }
+			#main article .button.primary:hover { background-color: #c4c0ff; }
+			#main article ul.icons li a:hover { color: var(--accent); }
+		</style>
 	</head>
 	<body class="is-preload">
 		<!-- Wrapper -->
